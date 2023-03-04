@@ -59,10 +59,10 @@ class _HomeScreenState extends State<HomeScreen> {
             actions: [
               Expanded(
                 flex: 1,
-                child: Image.asset("lib/screens/Community.png")
+                child: Image.asset("lib/Assets/Community.png")
                 ),
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: Container(
                   decoration: const BoxDecoration(
                     border: Border(
@@ -80,14 +80,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: TextButton(
                   onPressed: () => {}, 
                   child: const Text("Status",style: TextStyle(fontSize: 17,color: Color.fromARGB(255, 221, 220, 220)),),
                   ),
               ),
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: TextButton(
                   onPressed: () => {}, 
                   child: const Text("Calls",style: TextStyle(fontSize: 17,color: Color.fromARGB(255, 221, 220, 220)),),
@@ -97,114 +97,216 @@ class _HomeScreenState extends State<HomeScreen> {
                     
           ),
           SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index){
-                return dinesh[index];
-              },
-              childCount: Data.length, 
-            ),
+              delegate: SliverChildBuilderDelegate(
+                (BuildContext context, int index){
+                  return dinesh[index];
+                },
+                childCount: Data.length, 
+              ),
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (() {})
+        ),
     );
   }
 }
 
-List<Map<String, Object>> Data = [
+// ignore: non_constant_identifier_names
+List<Map<String, String>> Data = [
     {
-        "id": 2,
+        "id": "2",
         "name": "Alex",
         "picture": "https://image.ibb.co/cA2oOb/alex_1.jpg",
         "latest_timestamp": "10:00 AM",
         "lastChat": "Or maybe not, let me check logistics and call you. Give me sometime"
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "Bob",
         "picture": "https://image.ibb.co/gSyTOb/bob_1.jpg",
         "latest_timestamp": "12:30 AM",
         "lastChat": "Alright"
     },
     {
-        "id": 4,
+        "id": "4",
         "name": "Luke",
         "picture": "https://image.ibb.co/jOzeUG/luke_1.jpg",
         "latest_timestamp": "4:12 PM",
         "lastChat": "I will look into it"
     },
     {
-        "id": 5,
+        "id": "5",
         "name": "Bane",
         "picture": "https://image.ibb.co/cBZPww/bane_1.jpg",
         "latest_timestamp": "7:53 PM",
         "lastChat": "Exactly my point!"
     },
     {
-        "id": 6,
+        "id": "6",
         "name": "Darth Vader",
         "picture": "https://image.ibb.co/j4Ov3b/darth_vader_1.png",
         "latest_timestamp": "1:09 PM",
         "lastChat": "Not quite the same."
     },
     {
-        "id": 7,
+        "id": "7",
         "name": "Zach",
         "picture": "https://image.ibb.co/b4kxGw/zach_1.jpg",
         "latest_timestamp": "Yesterday",
         "lastChat": "I thought that the event was over long ago"
     },
     {
-        "id": 8,
+        "id": "8",
         "name": "Katie",
         "picture": "https://image.ibb.co/eLVWbw/katie_1.jpg",
         "latest_timestamp": "Yesterday",
         "lastChat": "nothing"
     },
     {
-        "id": 9,
+        "id": "9",
         "name": "Chloe",
         "picture": "https://image.ibb.co/ncAa3b/chloe_1.jpg",
         "latest_timestamp": "Wednesday",
         "lastChat": "sure i'll take it from you"
     },
     {
-        "id": 10,
+        "id": "10",
         "name": "Kennith",
         "picture": "https://image.ibb.co/fQKPww/kennith_1.jpg",
         "latest_timestamp": "Wednesday",
         "lastChat": "Take care, bye"
     },
     {
-        "id": 11,
+        "id": "11",
         "name": "Tara",
         "picture": "https://image.ibb.co/dM6hib/tara_1.jpg",
         "latest_timestamp": "Monday",
         "lastChat": "Not today"
     },
     {
-        "id": 12,
+        "id": "12",
         "name": "Gary",
         "picture": "https://image.ibb.co/gsF8Ob/gary_1.jpg",
         "latest_timestamp": "Sunday",
         "lastChat": "Whatever works for you!"
     },
     {
-        "id": 13,
+        "id": "13",
         "name": "Zoey",
         "picture": "https://image.ibb.co/nd0Wbw/zoey_1.jpg",
         "latest_timestamp": "8/12/2017",
         "lastChat": "Will get in touch"
     },
     {
-        "id": 14,
+        "id": "14",
         "name": "Ash",
         "picture": "https://image.ibb.co/iasYpG/ash_1.jpg",
         "latest_timestamp": "6/12/2017",
         "lastChat": "Ok"
     },
     {
-        "id": 15,
+        "id": "15",
         "name": "Zen",
+        "picture": "https://image.ibb.co/eeqWbw/zen_1.jpg",
+        "latest_timestamp": "19/11/2017",
+        "lastChat": "Lol"
+    },
+    {
+        "id": "16",
+        "name": "Uday",
+        "picture": "https://image.ibb.co/cA2oOb/alex_1.jpg",
+        "latest_timestamp": "10:00 AM",
+        "lastChat": "Or maybe not, let me check logistics and call you. Give me sometime"
+    },
+    {
+        "id": "17",
+        "name": "Bob",
+        "picture": "https://image.ibb.co/gSyTOb/bob_1.jpg",
+        "latest_timestamp": "12:30 AM",
+        "lastChat": "Alright"
+    },
+    {
+        "id": "18",
+        "name": "Luke",
+        "picture": "https://image.ibb.co/jOzeUG/luke_1.jpg",
+        "latest_timestamp": "4:12 PM",
+        "lastChat": "I will look into it"
+    },
+    {
+        "id": "19",
+        "name": "Bane",
+        "picture": "https://image.ibb.co/cBZPww/bane_1.jpg",
+        "latest_timestamp": "7:53 PM",
+        "lastChat": "Exactly my point!"
+    },
+    {
+        "id": "20",
+        "name": "Darth Vader",
+        "picture": "https://image.ibb.co/j4Ov3b/darth_vader_1.png",
+        "latest_timestamp": "1:09 PM",
+        "lastChat": "Not quite the same."
+    },
+    {
+        "id": "30",
+        "name": "Zach",
+        "picture": "https://image.ibb.co/b4kxGw/zach_1.jpg",
+        "latest_timestamp": "Yesterday",
+        "lastChat": "I thought that the event was over long ago"
+    },
+    {
+        "id": "31",
+        "name": "Katie",
+        "picture": "https://image.ibb.co/eLVWbw/katie_1.jpg",
+        "latest_timestamp": "Yesterday",
+        "lastChat": "nothing"
+    },
+    {
+        "id": "32",
+        "name": "Chloe",
+        "picture": "https://image.ibb.co/ncAa3b/chloe_1.jpg",
+        "latest_timestamp": "Wednesday",
+        "lastChat": "sure i'll take it from you"
+    },
+    {
+        "id": "33",
+        "name": "Kennith",
+        "picture": "https://image.ibb.co/fQKPww/kennith_1.jpg",
+        "latest_timestamp": "Wednesday",
+        "lastChat": "Take care, bye"
+    },
+    {
+        "id": "34",
+        "name": "Tara",
+        "picture": "https://image.ibb.co/dM6hib/tara_1.jpg",
+        "latest_timestamp": "Monday",
+        "lastChat": "Not today"
+    },
+    {
+        "id": "35",
+        "name": "Gary",
+        "picture": "https://image.ibb.co/gsF8Ob/gary_1.jpg",
+        "latest_timestamp": "Sunday",
+        "lastChat": "Whatever works for you!"
+    },
+    {
+        "id": "36",
+        "name": "Zoey",
+        "picture": "https://image.ibb.co/nd0Wbw/zoey_1.jpg",
+        "latest_timestamp": "8/12/2017",
+        "lastChat": "Will get in touch"
+    },
+    {
+        "id": "37",
+        "name": "Nikhil",
+        "picture": "https://image.ibb.co/iasYpG/ash_1.jpg",
+        "latest_timestamp": "6/12/2017",
+        "lastChat": "Ok"
+    },
+    {
+        "id": "38",
+        "name": "Dinesh",
         "picture": "https://image.ibb.co/eeqWbw/zen_1.jpg",
         "latest_timestamp": "19/11/2017",
         "lastChat": "Lol"
